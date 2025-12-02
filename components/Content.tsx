@@ -233,7 +233,7 @@ const getCardDetails = (isDark: boolean): Record<string, any> => ({
                             Includes detailed breakdowns of my internship at IBM, deployment projects with AWS/Docker, and my work with Generative AI agents.
                         </p>
                         <div className="flex flex-wrap gap-4">
-                             <a href="/resume.pdf" download className="contents">
+                             <a href="https://drive.google.com/uc?export=download&id=17x_xbhIEOIXHxAtZYX27i6wW5XqiG3Ss" className="contents">
                                 <ShimmerButton isDark={isDark} className="px-6 py-3 bg-indigo-600 text-white rounded-xl font-bold hover:bg-indigo-700 shadow-lg shadow-indigo-500/30">
                                     <Download size={20} /> Download PDF
                                 </ShimmerButton>
