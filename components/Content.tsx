@@ -241,7 +241,7 @@ const getCardDetails = (isDark: boolean): Record<string, any> => ({
                             <motion.a 
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                href="/resume.pdf" 
+                                href="https://drive.google.com/file/d/17x_xbhIEOIXHxAtZYX27i6wW5XqiG3Ss/view?usp=sharing" 
                                 target="_blank" 
                                 className={`px-6 py-3 rounded-xl font-bold border flex items-center gap-2 transition-colors ${isDark ? 'border-white/20 hover:bg-white/10' : 'border-black/10 hover:bg-black/5'}`}
                             >
@@ -878,7 +878,7 @@ const Content: React.FC<ContentProps> = ({ theme }) => {
                         Grab a comprehensive copy of my professional background and technical skills.
                     </p>
                     <div className="mt-auto">
-                        <a href="/resume.pdf" download className="contents">
+                        <a href="https://drive.google.com/uc?export=download&id=17x_xbhIEOIXHxAtZYX27i6wW5XqiG3Ss" className="contents">
                             <ShimmerButton 
                                 isDark={isDark}
                                 className={`w-full py-3 rounded-xl font-bold transition-all ${isDark ? 'bg-white text-black hover:bg-neutral-200' : 'bg-black text-white hover:bg-neutral-800'}`}
@@ -1010,7 +1010,9 @@ const Content: React.FC<ContentProps> = ({ theme }) => {
                         {cardDetails[selectedId].tags && (
                              <div className="mt-10 pt-6 border-t border-gray-500/20 flex flex-wrap gap-2">
                                 {cardDetails[selectedId].tags.map((tag: string) => (
-                                    <Badge key={tag} text={tag} isDark={isDark} />
+                                    <div key={tag}>
+                                        <Badge text={tag} isDark={isDark} />
+                                    </div>
                                 ))}
                              </div>
                         )}
